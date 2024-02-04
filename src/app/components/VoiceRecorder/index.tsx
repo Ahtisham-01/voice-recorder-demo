@@ -88,7 +88,6 @@ const VoiceRecording: React.FC = () => {
       <div className="w-full">
         {(isRecording || transcript) && (
           <div className="w-wull  md:w-1/4 m-auto rounded-md border p-4 bg-white">
-
             <div className="flex-1 flex w-full justify-between">
               <div className="space-y-1">
                 <p className="text-sm font-medium leading-none">
@@ -151,7 +150,7 @@ const VoiceRecording: React.FC = () => {
           <div className="w-wull px-4 md:w-1/4  m-auto rounded-md border mt-4 p-4 bg-white">
             <p className="mb-2">Recorded Audio:</p>
             <audio className="w-full" controls>
-              <source src={audioUrl} type="audio/wav" />
+              <source src={audioUrl} type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
           </div>
