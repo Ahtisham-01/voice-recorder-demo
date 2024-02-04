@@ -20,7 +20,6 @@ const VoiceRecording: React.FC = () => {
 
   const startRecording = () => {
     setIsRecording(true);
-    setAudioUrl("");
     navigator.mediaDevices
       .getUserMedia({ audio: true })
       .then((stream) => {
